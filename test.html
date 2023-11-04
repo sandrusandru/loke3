@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Form</title>
+</head>
+
+<body>
+    <h1>Email Form</h1>
+    <form id="emailForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+<script>
+    emailjs.init("TKM0KevX2_uZvYpob"); // Replace 'user_your_emailjs_user_id' with your EmailJS user ID
+
+    document.getElementById("emailForm").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the form from submitting
+
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+
+        // Use your EmailJS service and template IDs
+        emailjs.send("service_uki0ukr", "template_v81if2v", {
+            from_name: name,
+            from_email: email
+        }).then(function (response) {
+            console.log("Email sent successfully", response);
+            alert("Email sent successfully!");
+        }, function (error) {
+            console.error("Email failed to send", error);
+            alert("Email failed to send. Please try again later.");
+        });
+    });
+
+</script>
+
+</html>
