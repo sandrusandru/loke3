@@ -84,12 +84,12 @@
         </div>
 
         <!-- Left and right controls/icons -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
             <span class="carousel-control-prev-icon"></span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
             <span class="carousel-control-next-icon"></span>
-        </button>
+        </button> -->
     </div>
 
     <!-----------------------------------Carousesl End---------------------------------->
@@ -98,7 +98,7 @@
     <div class="container-fluid mt-5">
         <div class="row">
             <div class="col-sm ms-sm-5 experiencee">
-                <h1 class="aboutus">About Us</h1>
+                <h1 class="aboutus">ABOUT US</h1>
                 <h4 class="experience">20 Years Of Experience</h4> <br>
                 <p>Our commitment to bring professionalism, good service & trust to the home repair service &
                     maintenance business. We take immense pride in sending some of the most of professional handymen to
@@ -129,7 +129,7 @@
 
         <!-----------------------------------Services start---------------------------------->
         <section>
-            <h1 class="ms-5 ourservices">Our Services</h1>
+            <h1 class="ms-5 ourservices">OUR SERVICES</h1>
             <p class="ms-5 h4 what">What We Provide For You check now and <br> it
                 do you want now this</p> <br>
             <div class="container">
@@ -203,7 +203,8 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm ms-5-sm">
-                    <img class="img-fluid whychooseimg" src="dressing animation.png" alt="dressing animation" width="500px">
+                    <img class="img-fluid whychooseimg" src="dressing animation.png" alt="dressing animation"
+                        width="500px">
                 </div>
                 <div class="col-sm mt-5 me-5 whychoosepara">
                     <h1 class="whychooseus">Why Choose Us?</h1>
@@ -261,7 +262,7 @@
         <!-----------------------------------our team start---------------------------------->
         <section>
             <div class="container text-center">
-                <h1 class="ourexteam">Our Expert Team</h1>
+                <h1 class="ourexteam">OUR EXPECT TEAM</h1>
                 <h4 class="ourbotom">We have Expert Worker </h4>
                 <h4 class="ourbotom">They provide Quality Work For Customer</h4>
                 </p>
@@ -295,20 +296,33 @@
         <!-----------------------------------our team end---------------------------------->
 
         <!-----------------------------------Review start---------------------------------->
+        <br><br>
         <section>
             <div class="container-fluid ">
+                <h1 class="text-center">GET IN TOUCH</h1>
+                <br>
                 <div class="row">
-                    <div class="col-4">
-                        <img src="kitchan animation.gif" alt="background review " class="img-fluid  ">
+                    <div class="col-sm kitchananimation">
+                        <img src="kitchan animation.gif" alt="background review " class="img-fluid rounded-4 " width="550px">
                     </div>
 
-                    <div class="col-4">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo autem dolorum laudantium a
-                            atque voluptas quae similique. Accusantium cumque voluptate ex illo eligendi in ut molestias
-                            dignissimos corrupti beatae vel ullam, possimus est alias. Quam repellendus iste cupiditate
-                            ea. Doloremque ipsa dolorum, deleniti rem hic quaerat tenetur tempora deserunt <incidunt
-                                class=""></incidunt>
-                        </p>
+                    <div class="col-sm blur-background gettouch  ">
+                        <form action="#" class="ms-sm-5 mt-3 ">
+                            <div class="mb-3 mt-4">
+                                <label for="name" class="text-dark">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="text-dark">Password:</label>
+                                <input type="email" class="form-control" id="pwd" placeholder="Enter email" name="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="comment" class="text-dark">Comments:</label>
+                                <textarea class="form-control" rows="4" id="comment" name="text"></textarea>
+                            </div>
+        
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -416,11 +430,10 @@
                 delay: 400
             });
 
-            ScrollReveal().reveal('.aboutus,.ourservices,.ourexteam,', { delay: 500,origin:'left' });
-            ScrollReveal().reveal('.whychooseus,', { delay: 500,origin:'right' });
-            ScrollReveal().reveal('.imagevideo ', { delay: 600,origin:'right' });
-            ScrollReveal().reveal('.experiencee,.what,.whychoosepara,.headernav,.ourbotom,.founder', { delay: 500,origin:'bottom' });
-            ScrollReveal().reveal('.owl-carousel,.whychooseimg,.teamimg', { delay: 600,origin:'left', interval: 200 });
+            ScrollReveal().reveal('.aboutus,.ourservices,.ourexteam,.kitchananimation', { delay: 500, origin: 'left' });
+            ScrollReveal().reveal('.whychooseus,', { delay: 500, origin: 'right' });
+            ScrollReveal().reveal('.experiencee,.what,.whychoosepara,.headernav,.ourbotom,.founder,.imagevideo,.gettouch', { delay: 500, origin: 'bottom' });
+            ScrollReveal().reveal('.owl-carousel,.whychooseimg,.teamimg', { delay: 600, origin: 'left', interval: 200 });
 
 
 
